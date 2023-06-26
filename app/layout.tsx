@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "@/components/theme/theme-provider";
+import Header from "@/components/header/header";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,10 +13,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
+    /*
+        https://github.com/pacocoursey/next-themes
+              Note! If you do not add suppressHydrationWarning to your <html> you will get warnings because next-themes updates 
+              that element. This property only applies one level deep, so it won't block hydration warnings on other elements.
+                    */
     <html lang="en" suppressHydrationWarning>
       <body className="font-objektiv">
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+          <div className="min-h-screen min-w-fit flex flex-col items-center justify-between overflow-hidden">
+            <Header />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>
