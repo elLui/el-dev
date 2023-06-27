@@ -21,7 +21,7 @@ export const siteConfig = {
       isActive: false,
       icon: SiAboutdotme,
       activeIcon: GiAztecCalendarSun,
-      description: "About me",
+      description: "About mi, and what I do.",
     },
     {
       id: generateUniqueId(),
@@ -30,7 +30,7 @@ export const siteConfig = {
       isActive: false,
       icon: MdConnectWithoutContact,
       activeIcon: MdOutlineConnectWithoutContact,
-      description: "Contact me",
+      description: "Contact me, call me, if you wanna reach me.",
     },
     {
       id: generateUniqueId(),
@@ -39,7 +39,7 @@ export const siteConfig = {
       isActive: false,
       icon: ImBlog,
       activeIcon: ImBlog,
-      description: "Blog",
+      description: "Blog of things to blog about.",
     },
     {
       id: generateUniqueId(),
@@ -48,7 +48,7 @@ export const siteConfig = {
       isActive: false,
       icon: ImBlog,
       activeIcon: ImBlog,
-      description: "Projects",
+      description: "Projects are cool.",
     },
     {
       id: generateUniqueId(),
